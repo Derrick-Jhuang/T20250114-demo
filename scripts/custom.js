@@ -114,10 +114,53 @@ let swiper = {
 // web page
 let page = {
   init: () => {
-    console.log('test !!')
+    // Store
+    jhuangPing.buildStore({
+      key: 'jhuangPingStore',
+    }, {
+      isPlicyShow: false,
+    });
+
     jhuangPing.menu();
 
+    jhuangPing.click({
+      gotop: {
+        enable: true,
+          bk: '.hd-tools',
+        btn: '.js-gotop',
+      },
+      back: {
+        enable: true,
+        ele: '.js-back',
+      },
+    });
+
+    jhuangPing.lightbox();
+
     swiper.index();
+
+    // banner scroll
+    $('.c-btn-bn-scroll').click(function () {
+      let bannerHeight = $('.c-bn-index').height()
+      $('html, body').animate({
+        scrollTop: bannerHeight
+      }, 500, 'swing');
+    });
+
+    // footer Plicy
+    (function policy() {
+      const _store = jhuangPing.getStore('jhuangPingStore')
+      if (_store.isPlicyShow) {
+        $('.ft-cookie').addClass('hide')
+      }
+
+      $('.c-btn-ft-cookie').click(function () {
+        $('.ft-cookie').addClass('an-hide')
+        jhuangPing.setStore('jhuangPingStore', {
+          isPlicyShow: true
+        });
+      });
+    })();
   },
 }
 

@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title itemprop="name">JhuangPing</title>
+  <title itemprop="name">T20250114</title>
   <link rel="icon" href="./images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;family=Noto+Serif+TC:wght@200..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./scripts/plugin/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./styles/plugin.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -37,6 +37,36 @@
       </div>
       <div class="el-mask"></div>
     </header>
+    <div class="hd-tools">
+      <div class="hd-toolbar">
+        <ul class="hd-community">
+          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-instagram"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-facebook"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-line"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-threads"></span></a></li>
+        </ul>
+        <div class="btn-group">
+          <div class="c-btn-gotop js-gotop">
+            <div class="c-btn__icon"></div>
+            <div class="c-btn__name">TOP</div>
+          </div>
+        </div>
+      </div>
+      <div class="hd-tool-info">
+        <div class="hd-tool-info__item">
+          <div class="c-btn-tool-info is-discount">
+            <div class="c-btn__icon"></div>
+            <div class="c-btn__lable">優惠資訊</div>
+          </div>
+        </div>
+        <div class="hd-tool-info__item">
+          <div class="c-btn-tool-info is-recruitment">
+            <div class="c-btn__icon"></div>
+            <div class="c-btn__lable">徵才資訊</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="l-wp-main">
       <section class="c-bn-index">
         <div class="c-bn__inner"><img class="el-logo" src="./img/base/header/logo.png" alt="">
@@ -86,7 +116,7 @@
             <div class="c-headline__eng">Latest News</div>
           </div>
           <div class="news-main">
-            <div class="c-crd-news-main">
+            <div class="c-crd-news-main js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
               <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/news-main.jpg" alt="">
                 <div class="c-crd__time">
                   <div class="c-crd__time-date">2/18</div>
@@ -111,7 +141,7 @@
           <div class="news-lists">
             <ul class="news-list u-style-none">
               <li class="news-list__item">
-                <div class="c-crd-news-list">
+                <div class="c-crd-news-list js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                   <div class="c-crd__time">
                     <div class="c-crd__time-date">10/20</div>
                     <div class="c-crd__time-year">2024</div>
@@ -124,7 +154,7 @@
                 </div>
               </li>
               <li class="news-list__item">
-                <div class="c-crd-news-list">
+                <div class="c-crd-news-list js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                   <div class="c-crd__time">
                     <div class="c-crd__time-date">10/20</div>
                     <div class="c-crd__time-year">2024</div>
@@ -137,7 +167,7 @@
                 </div>
               </li>
               <li class="news-list__item">
-                <div class="c-crd-news-list">
+                <div class="c-crd-news-list js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                   <div class="c-crd__time">
                     <div class="c-crd__time-date">10/20</div>
                     <div class="c-crd__time-year">2024</div>
@@ -241,7 +271,7 @@
           </div>
           <div class="photo-content">
             <ul class="c-tab u-style-none"> 
-              <li class="tab__item"><a class="c-btn-tab"><span class="c-btn__label">成果發表</span></a></li>
+              <li class="tab__item"><a class="c-btn-tab active"><span class="c-btn__label">成果發表</span></a></li>
               <li class="tab__item"><a class="c-btn-tab"><span class="c-btn__label">課程花絮</span></a></li>
               <li class="tab__item"><a class="c-btn-tab"><span class="c-btn__label">環境設備</span></a></li>
             </ul>
@@ -252,47 +282,95 @@
                     <div class="photo-gallery__content">
                       <ul class="photo-gallery__list u-style-none">
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt=""></div>
-                        </li>
-                      </ul>
-                      <ul class="photo-gallery__list large u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt=""></div>
-                        </li>
-                      </ul>
-                      <ul class="photo-gallery__list u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="photo-gallery__item">
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="photo-gallery__item">
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -301,47 +379,95 @@
                     <div class="photo-gallery__content">
                       <ul class="photo-gallery__list u-style-none">
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt=""></div>
-                        </li>
-                      </ul>
-                      <ul class="photo-gallery__list large u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt=""></div>
-                        </li>
-                      </ul>
-                      <ul class="photo-gallery__list u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="photo-gallery__item">
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="photo-gallery__item">
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -350,47 +476,95 @@
                     <div class="photo-gallery__content">
                       <ul class="photo-gallery__list u-style-none">
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt=""></div>
-                        </li>
-                      </ul>
-                      <ul class="photo-gallery__list large u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt=""></div>
-                        </li>
-                      </ul>
-                      <ul class="photo-gallery__list u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                         <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt=""></div>
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="photo-gallery__item">
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="photo-gallery__item">
+                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt="">
+                            <div class="el-pic__view">
+                              <div class="el-pic__btn">View</div>
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -516,16 +690,14 @@
       </div>
       <div class="ft-cookie">
         <div class="ft-cookie__inner">
-          <p>本網站使用了COOKIE為您提供更好的體驗，繼續使用本網站表示您同意我們的隱私權政策</p><a href="http://" target="_blank" rel="noopener noreferrer">了解更多</a>
+          <p>本網站使用了COOKIE為您提供更好的體驗，繼續使用本網站表示您同意我們的隱私權政策</p><a class="js-fetch-open" href="javascript:void(0)" rel="noopener noreferrer" data-page="privacy-policyl.html" data-class="c-lbx-privacy">了解更多</a>
           <div class="c-btn-ft-cookie">
             <div class="c-btn__label">Got it</div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="./scripts/plugin/jquery/jquery-3.4.1.min.js"></script>
-    <script src="./scripts/plugin/swiper/swiper.min.js"></script>
-    <script src="./scripts/jhuangPing.min.js"></script>
+    <script src="./scripts/plugins.min.js"></script>
     <script src="./scripts/custom.js"></script>
   </div>
 </body></html>
