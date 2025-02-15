@@ -2000,6 +2000,7 @@ textarea {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 .u-yt::before, .u-youtube::before {
   content: "";
@@ -2108,6 +2109,10 @@ textarea {
   transition: all 0.5s;
   -webkit-transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
           transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+.c-btn-arrow-left.swiper-button-disabled, .c-btn-arrow-right.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0.1;
 }
 
 .c-btn-arrow-left .c-btn__label {
@@ -2810,6 +2815,87 @@ textarea {
 
 /* Table */
 /* Lightbox */
+.c-lbx-sale .c-lbx__ctr {
+  max-height: 98%;
+}
+.c-lbx-sale .lbx-tool {
+  margin-bottom: 15px;
+}
+.c-lbx-sale .lbx-ctr {
+  height: calc(100% - 40px - 15px - 15px);
+}
+.c-lbx-sale .lbx-content {
+  height: 100%;
+  padding-left: 4.4270833333vw;
+  padding-right: 4.4270833333vw;
+  padding-bottom: 40px;
+}
+.c-lbx-sale .lbx-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5625vw;
+  margin-bottom: 20px;
+}
+.c-lbx-sale .lbx-headline__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #fff;
+  background: #bdbdbd;
+  font-family: "Playfair Display", "Noto Sans TC", Arial, "Microsoft JhengHei", sans-serif;
+  padding: 10px 15px;
+}
+.c-lbx-sale .lbx-headline__label {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #e87f00;
+  letter-spacing: 0px;
+}
+.c-lbx-sale .lbx-view {
+  margin-bottom: 2.0833333333vw;
+}
+.c-lbx-sale .lbx-view__img {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.c-lbx-sale .lbx-view__img::before {
+  padding-bottom: 102.0833333333%;
+}
+.c-lbx-sale .lbx-description {
+  max-height: calc(100% - 68px - 20px - 59.6107055961% - 2.0833333333vw - 40px);
+  padding-bottom: 5px;
+}
+.c-lbx-sale .lbx-description::-webkit-scrollbar {
+  width: 5px;
+  background: #BFBFBF;
+  border-radius: 100px;
+}
+.c-lbx-sale .lbx-description::-webkit-scrollbar-track {
+  background: #BFBFBF;
+  border-radius: 100px;
+}
+.c-lbx-sale .lbx-description::-webkit-scrollbar-thumb {
+  background: #7B7B7B;
+  border-radius: 100px;
+}
+
 .c-lbx-news .lbx-content {
   width: calc(100% - 40px);
   padding-left: 1.5625vw;
@@ -2892,6 +2978,9 @@ textarea {
 .c-lbx-photo .lbx-ctr {
   height: calc(100% - 40px - 15px - 5px);
 }
+.c-lbx-photo .swiper-container {
+  height: 100%;
+}
 .c-lbx-photo .lbx-content {
   overflow: hidden;
   width: 100%;
@@ -2917,6 +3006,9 @@ textarea {
 }
 .c-lbx-photo .lbx-view__img {
   height: 86.8902439024%;
+}
+.c-lbx-photo .lbx-view__img::before {
+  padding-bottom: 100%;
 }
 .c-lbx-photo .lbx-view__img img {
   width: 100%;
@@ -2949,6 +3041,41 @@ textarea {
           justify-content: space-between;
   padding-left: 35px;
   padding-right: 35px;
+}
+
+.c-lbx-video .lbx-tool {
+  margin-bottom: 20px;
+}
+.c-lbx-video .lbx-ctr {
+  height: calc(100% - 40px - 15px - 20px);
+}
+.c-lbx-video .lbx-content {
+  height: 100%;
+  padding-left: 3.125vw;
+  padding-right: 3.125vw;
+  padding-bottom: 30px;
+}
+.c-lbx-video .lbx-video {
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+.c-lbx-video .lbx-description {
+  color: #2b2b2b;
+  line-height: 2.25;
+  max-height: calc(100% - 55px - 20px - 56.25% - 25px - 30px);
+}
+.c-lbx-video .lbx-description::-webkit-scrollbar {
+  width: 5px;
+  background: #BFBFBF;
+  border-radius: 100px;
+}
+.c-lbx-video .lbx-description::-webkit-scrollbar-track {
+  background: #BFBFBF;
+  border-radius: 100px;
+}
+.c-lbx-video .lbx-description::-webkit-scrollbar-thumb {
+  background: #7B7B7B;
+  border-radius: 100px;
 }
 
 .c-lbx-privacy .lbx-ctr {

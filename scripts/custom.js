@@ -194,9 +194,9 @@ let page = {
       }
     });
 
-    jhuangPing.tabs();
-
     swiper.index();
+
+    jhuangPing.tabs();
 
     // banner scroll
     $('.c-btn-bn-scroll').click(function () {
