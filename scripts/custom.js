@@ -63,7 +63,7 @@ let swiper = {
       },
     });
 
-    let photoSwiper = new Swiper('.js-idx-photo .swiper-container', {
+    let photoSwiper1 = new Swiper('.js-swp-idx-photo1', {
       slidesPerView: 1,
       spaceBetween: 0,
       effect: 'fade',
@@ -71,7 +71,35 @@ let swiper = {
         crossFade: true
       },
       pagination: {
-        el: '.js-idx-photo .photo-gallery__dot',
+        el: '.js-swp-idx-photo1-dot',
+        // type: 'fraction',
+        clickable: true,
+      },
+    });
+
+    let photoSwiper2 = new Swiper('.js-swp-idx-photo2', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.js-swp-idx-photo2-dot',
+        // type: 'fraction',
+        clickable: true,
+      },
+    });
+
+    let photoSwiper3 = new Swiper('.js-swp-idx-photo3', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.js-swp-idx-photo3-dot',
         // type: 'fraction',
         clickable: true,
       },
@@ -120,6 +148,20 @@ let page = {
     }, {
       isPlicyShow: false,
     });
+    // footer Plicy
+    (function policy() {
+      const _store = jhuangPing.getStore('jhuangPingStore')
+      if (_store.isPlicyShow) {
+        $('.ft-cookie').addClass('hide')
+      }
+
+      $('.c-btn-ft-cookie').click(function () {
+        $('.ft-cookie').addClass('an-hide')
+        jhuangPing.setStore('jhuangPingStore', {
+          isPlicyShow: true
+        });
+      });
+    })();
 
     jhuangPing.menu();
 
@@ -135,7 +177,24 @@ let page = {
       },
     });
 
-    jhuangPing.lightbox();
+    jhuangPing.lightbox({
+      init: function () {
+        let photoLbxSwiper = new Swiper('.js-swp-photo-lbx .swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true
+          },
+          navigation: {
+            nextEl: '.js-swp-photo-lbx .js-btn-next',
+            prevEl: '.js-swp-photo-lbx .js-btn-prev'
+          },
+        });
+      }
+    });
+
+    jhuangPing.tabs();
 
     swiper.index();
 
@@ -146,21 +205,6 @@ let page = {
         scrollTop: bannerHeight
       }, 500, 'swing');
     });
-
-    // footer Plicy
-    (function policy() {
-      const _store = jhuangPing.getStore('jhuangPingStore')
-      if (_store.isPlicyShow) {
-        $('.ft-cookie').addClass('hide')
-      }
-
-      $('.c-btn-ft-cookie').click(function () {
-        $('.ft-cookie').addClass('an-hide')
-        jhuangPing.setStore('jhuangPingStore', {
-          isPlicyShow: true
-        });
-      });
-    })();
   },
 }
 

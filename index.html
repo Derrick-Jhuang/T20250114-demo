@@ -29,10 +29,10 @@
           <li class="menu-list__item"><a class="menu-list__link" href="#contact"><span class="el-tw">聯絡我們</span><span class="el-eng">Contact Us</span></a></li>
         </nav>
         <ul class="menu-community u-style-none">
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
+          <li class="menu-community__item"><a class="menu-community__link"><span class="icon-instagram"></span></a></li>
+          <li class="menu-community__item"><a class="menu-community__link"><span class="icon-facebook"></span></a></li>
+          <li class="menu-community__item"><a class="menu-community__link"><span class="icon-line"></span></a></li>
+          <li class="menu-community__item"><a class="menu-community__link"><span class="icon-threads"></span></a></li>
         </ul>
       </div>
       <div class="el-mask"></div>
@@ -40,10 +40,10 @@
     <div class="hd-tools">
       <div class="hd-toolbar">
         <ul class="hd-community">
-          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-instagram"></span></a></li>
-          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-facebook"></span></a></li>
-          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-line"></span></a></li>
-          <li class="hd-community__item"><a class="hd-community__link" href=""><span class="icon-threads"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-instagram"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-facebook"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-line"></span></a></li>
+          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-threads"></span></a></li>
         </ul>
         <div class="btn-group">
           <div class="c-btn-gotop js-gotop">
@@ -271,306 +271,904 @@
           </div>
           <div class="photo-content">
             <ul class="c-tab u-style-none"> 
-              <li class="tab__item"><a class="c-btn-tab active"><span class="c-btn__label">成果發表</span></a></li>
-              <li class="tab__item"><a class="c-btn-tab"><span class="c-btn__label">課程花絮</span></a></li>
-              <li class="tab__item"><a class="c-btn-tab"><span class="c-btn__label">環境設備</span></a></li>
+              <li class="tab__item"><a class="c-btn-tab" href="#tab1"><span class="c-btn__label">成果發表</span></a></li>
+              <li class="tab__item"><a class="c-btn-tab" href="#tab2"><span class="c-btn__label">課程花絮</span></a></li>
+              <li class="tab__item"><a class="c-btn-tab" href="#tab3"><span class="c-btn__label">環境設備</span></a></li>
             </ul>
-            <div class="c-tab-content js-idx-photo">
-              <div class="photo-gallery swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="photo-gallery__content">
-                      <ul class="photo-gallery__list u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+            <div class="c-tab-content">
+              <div class="c-tab-inner" id="tab1">
+                <div class="photo-gallery swiper-container js-swp-idx-photo1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="photo-gallery__content">
-                      <ul class="photo-gallery__list u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="photo-gallery__content">
-                      <ul class="photo-gallery__list u-style-none">
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic01.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic02.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic03.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic04.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic05.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic06.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic07.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic08.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic09.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic10.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic11.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic12.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li class="photo-gallery__item">
-                          <div class="el-pic u-imgfix-cover"><img src="./img/base/index/photo-pic13.png" alt="">
-                            <div class="el-pic__view">
-                              <div class="el-pic__btn">View</div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="photo-gallery__dot"></div>
+                <div class="photo-gallery__dot js-swp-idx-photo1-dot"></div>
+              </div>
+              <div class="c-tab-inner" id="tab2">
+                <div class="photo-gallery swiper-container js-swp-idx-photo2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="photo-gallery__dot js-swp-idx-photo2-dot"></div>
+              </div>
+              <div class="c-tab-inner" id="tab3">
+                <div class="photo-gallery swiper-container js-swp-idx-photo3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-gallery__content">
+                        <ul class="photo-gallery__list u-style-none">
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="photo-gallery__item">
+                            <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
+                              <div class="el-pic__view">
+                                <div class="el-pic__btn">View</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="photo-gallery__dot js-swp-idx-photo3-dot"></div>
               </div>
             </div>
           </div>
@@ -586,7 +1184,7 @@
             <div class="video-list__content swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic01.jpg" alt=""></div>
                     <div class="c-crd__inner">
                       <div class="c-crd__title">突破自我，成就未來：課程全解</div>
@@ -595,7 +1193,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic02.jpg" alt=""></div>
                     <div class="c-crd__inner">
                       <div class="c-crd__title">輕鬆提升成績，從這堂課開始！</div>
@@ -604,7 +1202,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic03.jpg" alt=""></div>
                     <div class="c-crd__inner">
                       <div class="c-crd__title">探索學習的無限可能：課程介紹</div>
@@ -613,7 +1211,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic04.jpg" alt=""></div>
                     <div class="c-crd__inner">
                       <div class="c-crd__title">每一堂課都充滿動力和樂趣！</div>
