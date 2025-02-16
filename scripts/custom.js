@@ -191,6 +191,11 @@ let page = {
             prevEl: '.js-swp-photo-lbx .js-btn-prev'
           },
         });
+
+        $('.c-btn-lbx-recruitment').click(function () {
+          $('.lbx-item__body').stop().slideUp();
+          $(this).closest('.lbx-item__head').next('.lbx-item__body').stop().slideToggle();
+        })
       }
     });
 
