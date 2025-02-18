@@ -281,14 +281,28 @@
             <div class="c-headline__eng">Photo Book</div>
           </div>
           <div class="photo-content">
-            <ul class="c-tab u-style-none"> 
-              <li class="tab__item"><a class="c-btn-tab" href="#tab1"><span class="c-btn__label">成果發表</span></a></li>
-              <li class="tab__item"><a class="c-btn-tab" href="#tab2"><span class="c-btn__label">課程花絮</span></a></li>
-              <li class="tab__item"><a class="c-btn-tab" href="#tab3"><span class="c-btn__label">環境設備</span></a></li>
-            </ul>
+            <div class="c-tab-switch">
+              <div class="c-tab-switch__toggle">
+                <div class="c-btn-tab js-open">
+                  <div class="c-btn__label">成果發展</div>
+                  <div class="c-btn__icon"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="c-tab-switch__inner">
+                <div class="c-tab-switch__close">
+                  <div class="c-btn-lbx-close js-close"></div>
+                </div>
+                <ul class="c-tab u-style-none"> 
+                  <li class="tab__item"><a class="c-btn-tab" href="#tab1"><span class="c-btn__label">成果發表</span></a></li>
+                  <li class="tab__item"><a class="c-btn-tab" href="#tab2"><span class="c-btn__label">課程花絮</span></a></li>
+                  <li class="tab__item"><a class="c-btn-tab" href="#tab3"><span class="c-btn__label">環境設備</span></a></li>
+                </ul>
+              </div>
+              <div class="c-tab-switch__mask js-close"></div>
+            </div>
             <div class="c-tab-content">
-              <div class="c-tab-inner" id="tab1">
-                <div class="photo-gallery swiper-container js-swp-idx-photo1">
+              <div class="c-tab-inner js-swp-idx-photo1" id="tab1">
+                <div class="photo-gallery swiper-container">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
@@ -583,10 +597,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="photo-gallery__dot js-swp-idx-photo1-dot"></div>
+                <div class="photo-galler-btn-group btn-group">
+                  <div class="c-btn-img-arrow-left js-btn-prev"></div>
+                  <div class="c-btn-img-arrow-right js-btn-next"></div>
+                </div>
+                <div class="photo-gallery-dot js-swp-idx-photo-dot"></div>
               </div>
-              <div class="c-tab-inner" id="tab2">
-                <div class="photo-gallery swiper-container js-swp-idx-photo2">
+              <div class="c-tab-inner js-swp-idx-photo2" id="tab2">
+                <div class="photo-gallery swiper-container">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
@@ -881,10 +899,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="photo-gallery__dot js-swp-idx-photo2-dot"></div>
+                <div class="photo-galler-btn-group btn-group">
+                  <div class="c-btn-img-arrow-left js-btn-prev"></div>
+                  <div class="c-btn-img-arrow-right js-btn-next"></div>
+                </div>
+                <div class="photo-gallery-dot js-swp-idx-photo-dot"></div>
               </div>
-              <div class="c-tab-inner" id="tab3">
-                <div class="photo-gallery swiper-container js-swp-idx-photo3">
+              <div class="c-tab-inner js-swp-idx-photo3" id="tab3">
+                <div class="photo-gallery swiper-container">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
@@ -1179,14 +1201,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="photo-gallery__dot js-swp-idx-photo3-dot"></div>
+                <div class="photo-galler-btn-group btn-group">
+                  <div class="c-btn-img-arrow-left js-btn-prev"></div>
+                  <div class="c-btn-img-arrow-right js-btn-next"></div>
+                </div>
+                <div class="photo-gallery-dot js-swp-idx-photo-dot"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="video" id="video">
-        <div class="video-wp l-wp u-max-w-1685">
+        <div class="video-wp l-wp">
           <div class="c-headline">
             <div class="c-headline__cht">影音記錄 </div>
             <div class="c-headline__eng">Video Records</div>
@@ -1319,6 +1345,5 @@
       </div>
     </footer>
     <script src="./scripts/plugins.min.js"></script>
-    <script src="./scripts/custom.js"></script>
   </div>
 </body></html>
