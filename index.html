@@ -37,45 +37,53 @@
       </div>
       <div class="el-mask"></div>
     </header>
-    <div class="hd-tools">
-      <div class="hd-toolbar">
-        <ul class="hd-community">
-          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-instagram"></span></a></li>
-          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-facebook"></span></a></li>
-          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-line"></span></a></li>
-          <li class="hd-community__item"><a class="hd-community__link"><span class="icon-threads"></span></a></li>
+    <ul class="c-toolbar">
+      <li class="c-toolbar__item is-list">
+        <ul class="toolbar-community">
+          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-instagram"></span></a></li>
+          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-facebook"></span></a></li>
+          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-line"></span></a></li>
+          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-threads"></span></a></li>
         </ul>
+        <div class="toolbar-focus">
+          <div class="c-btn-toolbar-focus">
+            <div class="c-btn__icon"></div>
+            <div class="c-btn__label">關注</div>
+          </div>
+        </div>
         <div class="btn-group">
           <div class="c-btn-gotop js-gotop">
             <div class="c-btn__icon"></div>
             <div class="c-btn__name">TOP</div>
           </div>
         </div>
-      </div>
-      <div class="hd-tool-info">
-        <div class="hd-tool-info__item">
-          <div class="c-btn-tool-info is-discount js-fetch-open" data-page="sale.html" data-class="c-lbx-sale">
-            <div class="c-btn__icon"></div>
-            <div class="c-btn__lable">優惠資訊</div>
+      </li>
+      <li class="c-toolbar__item is-label">
+        <div class="toolbar-label">
+          <div class="toolbar-label__item">
+            <div class="c-btn-toolbar-label is-discount js-fetch-open" data-page="sale.html" data-class="c-lbx-sale">
+              <div class="c-btn__icon"></div>
+              <div class="c-btn__label">廣告訊息</div>
+            </div>
+          </div>
+          <div class="toolbar-label__item">
+            <div class="c-btn-toolbar-label is-recruitment js-fetch-open" data-page="recruitment.html" data-class="c-lbx-recruitment">
+              <div class="c-btn__icon"></div>
+              <div class="c-btn__label">招募訊息</div>
+            </div>
           </div>
         </div>
-        <div class="hd-tool-info__item">
-          <div class="c-btn-tool-info is-recruitment js-fetch-open" data-page="recruitment.html" data-class="c-lbx-recruitment">
-            <div class="c-btn__icon"></div>
-            <div class="c-btn__lable">徵才資訊</div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </li>
+    </ul>
     <div class="l-wp-main">
       <div class="c-logo"><a class="c-logo__img" href="index.html"><img class="el-logo" src="./img/base/header/logo.png" alt=""></a></div>
       <section class="c-bn-index">
         <div class="c-bn__inner">
-          <div class="inner"><img class="el-logo" src="./img/base/header/logo.png" alt="">
-            <h2 class="el-title u-style-none">Your Pathway to Academic Success!</h2>
-            <h3 class="el-subtitle u-style-none">加入我們‧開創未來</h3>
-            <p class="el-text">我們致力於幫助每位學生發揮潛力，突破學習障礙，無論是學科成績提升、語言能力加強，還是全面素質的培養。我們提供高質量的個性化教學，讓每個學生都能在自己的學習旅程中取得最好的成果。</p>
-            <div class="btn-group">
+          <div class="inner"><img class="el-logo" src="./img/base/header/logo.png" alt="" data-aos="fade-up">
+            <h2 class="el-title u-style-none" data-aos="fade-up">Your Pathway to Academic Success!</h2>
+            <h3 class="el-subtitle u-style-none" data-aos="fade-up">加入我們‧開創未來</h3>
+            <p class="el-text" data-aos="fade-up">我們致力於幫助每位學生發揮潛力，突破學習障礙，無論是學科成績提升、語言能力加強，還是全面素質的培養。我們提供高質量的個性化教學，讓每個學生都能在自己的學習旅程中取得最好的成果。</p>
+            <div class="btn-group" data-aos="fade-up">
               <div class="c-btn-bn-contact">
                 <div class="c-btn__label">立即聯絡</div>
                 <div class="c-btn__icon"></div>
@@ -83,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="c-bn__view js-swiper-index">
+        <div class="c-bn__view js-swiper-index" data-aos="fade-left">
           <div class="c-bn__content swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -115,11 +123,11 @@
       <section class="news" id="news">
         <div class="news-wp l-wp">
           <div class="c-headline">
-            <div class="c-headline__cht">最新消息</div>
-            <div class="c-headline__eng">Latest News</div>
+            <div class="c-headline__cht" data-aos="fade-down">最新消息</div>
+            <div class="c-headline__eng" data-aos="fade-down">Latest News</div>
           </div>
           <div class="c-section-ctr">
-            <div class="news-main">
+            <div class="news-main" data-aos="fade-right">
               <div class="c-crd-news-main js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                 <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/news-main.jpg" alt="">
                   <div class="c-crd__time">
@@ -150,7 +158,7 @@
             </div>
             <div class="news-lists">
               <ul class="news-list u-style-none">
-                <li class="news-list__item">
+                <li class="news-list__item" data-aos="fade-up" data-aos-delay="100">
                   <div class="c-crd-news-list js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                     <div class="c-crd__time">
                       <div class="c-crd__time-date">10/20</div>
@@ -163,7 +171,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="news-list__item">
+                <li class="news-list__item" data-aos="fade-up" data-aos-delay="100">
                   <div class="c-crd-news-list js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                     <div class="c-crd__time">
                       <div class="c-crd__time-date">10/20</div>
@@ -176,7 +184,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="news-list__item">
+                <li class="news-list__item" data-aos="fade-up" data-aos-delay="100">
                   <div class="c-crd-news-list js-fetch-open" data-page="news-detail.html" data-class="c-lbx-news">
                     <div class="c-crd__time">
                       <div class="c-crd__time-date">10/20</div>
@@ -198,19 +206,19 @@
         <div class="about-wp l-wp u-max-w-1570">
           <div class="about-main">
             <ul class="about-main__list u-style-none">
-              <li class="about-main__item">
+              <li class="about-main__item" data-aos="fade-up">
                 <div class="about-main__pic u-imgfix-cover"><img src="./img/base/index/abt-main-pic01.jpg" alt=""></div>
               </li>
-              <li class="about-main__item">
+              <li class="about-main__item" data-aos="fade-up">
                 <div class="about-main__pic u-imgfix-cover"><img src="./img/base/index/abt-main-pic02.jpg" alt=""></div>
               </li>
             </ul>
           </div>
           <div class="c-headline">
-            <div class="c-headline__cht">關於我們</div>
-            <div class="c-headline__eng">About Us</div>
+            <div class="c-headline__cht" data-aos="fade-down">關於我們</div>
+            <div class="c-headline__eng" data-aos="fade-down">About Us</div>
           </div>
-          <div class="about-info u-scroll-y">
+          <div class="about-info u-scroll-y" data-aos="fade-up">
             <div class="row">
               <div class="col-12">
                 <h3 class="about-info__title u-style-none">在這裡，學習不再枯燥，進步從每一課開始</h3>
@@ -243,28 +251,28 @@
             </div>
           </div>
           <ul class="about-photos u-style-none">
-            <li class="about-photos__item">
+            <li class="about-photos__item" data-aos="fade-up">
               <div class="c-crd-abt-photo">
                 <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/about-photo-pic01.jpg" alt=""></div>
                 <div class="c-crd__title">小班授課</div>
                 <div class="c-crd__description">關注每位學員，個人<br>化輔導，效果更佳！</div>
               </div>
             </li>
-            <li class="about-photos__item">
+            <li class="about-photos__item" data-aos="fade-up">
               <div class="c-crd-abt-photo">
                 <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/about-photo-pic02.jpg" alt=""></div>
                 <div class="c-crd__title">經驗豐富</div>
                 <div class="c-crd__description">精選教師，專業且耐心</div>
               </div>
             </li>
-            <li class="about-photos__item">
+            <li class="about-photos__item" data-aos="fade-up">
               <div class="c-crd-abt-photo">
                 <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/about-photo-pic03.jpg" alt=""></div>
                 <div class="c-crd__title">彈性的上課時間</div>
                 <div class="c-crd__description">讓您輕鬆安排學習與生活</div>
               </div>
             </li>
-            <li class="about-photos__item">
+            <li class="about-photos__item" data-aos="fade-up">
               <div class="c-crd-abt-photo">
                 <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/about-photo-pic04.jpg" alt=""></div>
                 <div class="c-crd__title">科學的學習方法</div>
@@ -277,8 +285,8 @@
       <section class="photo" id="photo">
         <div class="photo-wp l-wp">
           <div class="c-headline">
-            <div class="c-headline__cht">相片集</div>
-            <div class="c-headline__eng">Photo Book</div>
+            <div class="c-headline__cht" data-aos="fade-down">相片集</div>
+            <div class="c-headline__eng" data-aos="fade-down">Photo Book</div>
           </div>
           <div class="photo-content">
             <div class="c-tab-switch">
@@ -293,9 +301,9 @@
                   <div class="c-btn-lbx-close js-close"></div>
                 </div>
                 <ul class="c-tab u-style-none"> 
-                  <li class="tab__item"><a class="c-btn-tab" href="#tab1"><span class="c-btn__label">成果發表</span></a></li>
-                  <li class="tab__item"><a class="c-btn-tab" href="#tab2"><span class="c-btn__label">課程花絮</span></a></li>
-                  <li class="tab__item"><a class="c-btn-tab" href="#tab3"><span class="c-btn__label">環境設備</span></a></li>
+                  <li class="tab__item" data-aos="fade-up"><a class="c-btn-tab" href="#tab1"><span class="c-btn__label">成果發表</span></a></li>
+                  <li class="tab__item" data-aos="fade-up"><a class="c-btn-tab" href="#tab2"><span class="c-btn__label">課程花絮</span></a></li>
+                  <li class="tab__item" data-aos="fade-up"><a class="c-btn-tab" href="#tab3"><span class="c-btn__label">環境設備</span></a></li>
                 </ul>
               </div>
               <div class="c-tab-switch__mask js-close"></div>
@@ -307,91 +315,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -404,91 +412,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -501,91 +509,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -609,91 +617,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -706,91 +714,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -803,91 +811,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -911,91 +919,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -1008,91 +1016,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -1105,91 +1113,91 @@
                     <div class="swiper-slide">
                       <div class="photo-gallery__content">
                         <ul class="photo-gallery__list u-style-none">
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic01.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic02.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic03.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic04.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic05.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic06.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic07.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic08.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic09.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic10.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic11.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic12.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
                               </div>
                             </div>
                           </li>
-                          <li class="photo-gallery__item">
+                          <li class="photo-gallery__item" data-aos="zoom-out">
                             <div class="el-pic u-imgfix-cover js-fetch-open" data-page="photo-detail.html" data-class="c-lbx-photo"><img src="./img/base/index/photo-pic13.png" alt="">
                               <div class="el-pic__view">
                                 <div class="el-pic__btn">View</div>
@@ -1214,14 +1222,14 @@
       <section class="video" id="video">
         <div class="video-wp l-wp">
           <div class="c-headline">
-            <div class="c-headline__cht">影音記錄 </div>
-            <div class="c-headline__eng">Video Records</div>
+            <div class="c-headline__cht" data-aos="fade-down">影音記錄 </div>
+            <div class="c-headline__eng" data-aos="fade-down">Video Records</div>
           </div>
           <div class="video-list js-idx-video">
             <div class="video-list__content swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video" data-aos="fade-up">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic01.jpg" alt="">
                       <div class="el-view">View</div>
                     </div>
@@ -1232,7 +1240,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video" data-aos="fade-up">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic02.jpg" alt="">
                       <div class="el-view">View</div>
                     </div>
@@ -1243,7 +1251,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video" data-aos="fade-up">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic03.jpg" alt="">
                       <div class="el-view">View</div>
                     </div>
@@ -1254,7 +1262,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video">
+                  <div class="c-crd-idx-video js-fetch-open" data-page="video-detail.html" data-class="c-lbx-video" data-aos="fade-up">
                     <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/video-pic04.jpg" alt="">
                       <div class="el-view">View</div>
                     </div>
@@ -1276,12 +1284,12 @@
       <section class="contact" id="contact">
         <div class="contact-wp l-wp u-max-w-1675">
           <div class="c-headline">
-            <div class="c-headline__cht">聯絡我們</div>
-            <div class="c-headline__eng">Contact Us</div>
+            <div class="c-headline__cht" data-aos="fade-down">聯絡我們</div>
+            <div class="c-headline__eng" data-aos="fade-down">Contact Us</div>
           </div>
           <div class="contact-content">
             <ul class="contact-list u-style-none">
-              <li class="contact-list__item">
+              <li class="contact-list__item" data-aos="fade-up">
                 <div class="c-crd-idx-contact">
                   <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/contact-pic01.jpg" alt="" srcset=""></div>
                   <div class="c-crd__list">
@@ -1294,7 +1302,7 @@
                   </div>
                 </div>
               </li>
-              <li class="contact-list__item">
+              <li class="contact-list__item" data-aos="fade-up">
                 <div class="c-crd-idx-contact">
                   <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/contact-pic02.jpg" alt="" srcset=""></div>
                   <div class="c-crd__list">
@@ -1307,7 +1315,7 @@
                   </div>
                 </div>
               </li>
-              <li class="contact-list__item">
+              <li class="contact-list__item" data-aos="fade-up">
                 <div class="c-crd-idx-contact">
                   <div class="c-crd__pic u-imgfix-cover"><img src="./img/base/index/contact-pic03.jpg" alt="" srcset=""></div>
                   <div class="c-crd__list">
@@ -1321,7 +1329,7 @@
                 </div>
               </li>
             </ul>
-            <div class="contact-pic u-imgfix-cover"><img src="./img/base/index/contact-view.jpg" alt=""></div>
+            <div class="contact-pic u-imgfix-cover" data-aos="fade-left"><img src="./img/base/index/contact-view.jpg" alt=""></div>
           </div>
         </div>
       </section>
