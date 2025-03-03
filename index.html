@@ -16,6 +16,7 @@
 <body>
   <div class="l-wp-html">
     <header class="hd">
+      <div class="hd-logo"><a class="hd-logo__img js-gotop"><img class="el-logo" src="./img/base/header/logo.png" alt=""></a></div>
       <div class="hd-toggle js-hamburger">
         <div class="hd-toggle__bar"><span></span><span></span><span></span></div>
         <div class="hd-toggle__label">MENU</div>
@@ -37,46 +38,7 @@
       </div>
       <div class="el-mask"></div>
     </header>
-    <ul class="c-toolbar">
-      <li class="c-toolbar__item is-list">
-        <ul class="toolbar-community">
-          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-instagram"></span></a></li>
-          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-facebook"></span></a></li>
-          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-line"></span></a></li>
-          <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-threads"></span></a></li>
-        </ul>
-        <div class="toolbar-focus">
-          <div class="c-btn-toolbar-focus">
-            <div class="c-btn__icon"></div>
-            <div class="c-btn__label">關注</div>
-          </div>
-        </div>
-        <div class="btn-group">
-          <div class="c-btn-gotop js-gotop">
-            <div class="c-btn__icon"></div>
-            <div class="c-btn__name">TOP</div>
-          </div>
-        </div>
-      </li>
-      <li class="c-toolbar__item is-label">
-        <div class="toolbar-label">
-          <div class="toolbar-label__item">
-            <div class="c-btn-toolbar-label is-discount js-fetch-open" data-page="sale.html" data-class="c-lbx-sale">
-              <div class="c-btn__icon"></div>
-              <div class="c-btn__label">廣告訊息</div>
-            </div>
-          </div>
-          <div class="toolbar-label__item">
-            <div class="c-btn-toolbar-label is-recruitment js-fetch-open" data-page="recruitment.html" data-class="c-lbx-recruitment">
-              <div class="c-btn__icon"></div>
-              <div class="c-btn__label">招募訊息</div>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
     <div class="l-wp-main">
-      <div class="c-logo"><a class="c-logo__img" href="index.html"><img class="el-logo" src="./img/base/header/logo.png" alt=""></a></div>
       <section class="c-bn-index">
         <div class="c-bn__inner">
           <div class="inner"><img class="el-logo" src="./img/base/header/logo.png" alt="" data-aos="fade-up">
@@ -1354,6 +1316,89 @@
         </div>
       </div>
     </footer>
+    <div class="fixed-side u-show-sm-pc">
+      <ul class="fixed-toolbar">
+        <li class="fixed-toolbar__item is-list">
+          <ul class="toolbar-community">
+            <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-instagram"></span></a></li>
+            <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-facebook"></span></a></li>
+            <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-line"></span></a></li>
+            <li class="toolbar-community__item"><a class="toolbar-community__link"><span class="icon-threads"></span></a></li>
+          </ul>
+          <div class="toolbar-focus">
+            <div class="c-btn-fixed-focus">
+              <div class="c-btn__icon"></div>
+              <div class="c-btn__label">關注</div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <div class="c-btn-gotop js-gotop">
+              <div class="c-btn__icon"></div>
+              <div class="c-btn__name">TOP</div>
+            </div>
+          </div>
+        </li>
+        <li class="fixed-toolbar__item is-label">
+          <div class="toolbar-label">
+            <div class="toolbar-label__item">
+              <div class="c-btn-toolbar-label is-discount js-fetch-open" data-page="sale.html" data-class="c-lbx-sale">
+                <div class="c-btn__icon"></div>
+                <div class="c-btn__label">廣告訊息</div>
+              </div>
+            </div>
+            <div class="toolbar-label__item">
+              <div class="c-btn-toolbar-label is-recruitment js-fetch-open" data-page="recruitment.html" data-class="c-lbx-recruitment">
+                <div class="c-btn__icon"></div>
+                <div class="c-btn__label">招募訊息</div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="fixed-side u-show-sm-mobile">
+      <ul class="fixed-btn-group">
+        <li class="fixed-btn-group__item">
+          <div class="c-btn-fixed-focus">
+            <div class="c-btn__icon"></div>
+            <div class="c-btn__label">關注</div>
+          </div>
+        </li>
+        <li class="fixed-btn-group__item">
+          <div class="c-btn-gotop js-gotop">
+            <div class="c-btn__icon"></div>
+            <div class="c-btn__name">TOP</div>
+          </div>
+        </li>
+      </ul>
+      <div class="fixed-label-toggle js-open-fixed-label">
+        <div class="el-toggle__tag">NEW</div>
+        <div class="el-toggle__label">Quick Access</div>
+        <div class="el-toggle__icon"></div>
+      </div>
+      <div class="fixed-label">
+        <div class="fixed-label-headline"> 
+          <div class="fixed-label-headline__label">Quick Access</div>
+          <div class="fixed-label-headline__icon js-close-fixed-label"></div>
+        </div>
+        <div class="fixed-label-content">
+          <ul class="fixed-label-content__list">
+            <li class="fixed-label-content__item">
+              <div class="c-btn-fixed-label js-fetch-open" data-page="sale.html" data-class="c-lbx-sale">
+                <div class="c-btn__icon" style="mask-image: url('img/common/icon/speaker.svg')"></div>
+                <div class="c-btn__label">廣告訊息</div>
+              </div>
+            </li>
+            <li class="fixed-label-content__item">
+              <div class="c-btn-fixed-label js-fetch-open" data-page="recruitment.html" data-class="c-lbx-recruitment">
+                <div class="c-btn__icon" style="mask-image: url('img/common/icon/throng.svg')"></div>
+                <div class="c-btn__label">招募訊息</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./scripts/plugins.min.js"></script>
   </div>
 </body></html>
