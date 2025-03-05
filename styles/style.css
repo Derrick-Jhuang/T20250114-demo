@@ -2476,7 +2476,7 @@ textarea {
 }
 
 .c-btn-toolbar-label {
-  width: 150px;
+  width: 145px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3741,7 +3741,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  margin-right: 10px;
+  margin-right: 17px;
   background: rgba(210, 210, 210, 0.84);
   border-radius: 50px;
   padding: 22px 17px;
@@ -3917,9 +3917,9 @@ textarea {
 }
 @media all and (max-width: 1366px) {
   .toolbar-label__item {
-    -webkit-transform: translateX(92px);
-        -ms-transform: translateX(92px);
-            transform: translateX(92px);
+    -webkit-transform: translateX(87px);
+        -ms-transform: translateX(87px);
+            transform: translateX(87px);
   }
 }
 
@@ -3930,9 +3930,9 @@ textarea {
   padding: 20px 10px;
 }
 .fixed-side.is-move .toolbar-label__item, .fixed-side.is-end .toolbar-label__item {
-  -webkit-transform: translateX(92px);
-      -ms-transform: translateX(92px);
-          transform: translateX(92px);
+  -webkit-transform: translateX(87px);
+      -ms-transform: translateX(87px);
+          transform: translateX(87px);
 }
 @media all and (min-width: 1367px) {
   .fixed-side.is-move .c-btn-toolbar-label:hover, .fixed-side.is-end .c-btn-toolbar-label:hover {
