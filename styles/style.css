@@ -4200,7 +4200,6 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
   margin-bottom: 40px;
 }
 .c-tab-switch__toggle > .c-btn-tab {
