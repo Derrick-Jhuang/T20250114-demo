@@ -5257,6 +5257,25 @@ textarea {
 .news-lists {
   width: 37.8571428571%;
 }
+@media all and (min-width: 1281px) {
+  .news-lists.is-scroll {
+    overflow-x: hidden;
+    height: 445px;
+  }
+  .news-lists.is-scroll::-webkit-scrollbar {
+    width: 5px;
+    background: #BFBFBF;
+    border-radius: 100px;
+  }
+  .news-lists.is-scroll::-webkit-scrollbar-track {
+    background: #BFBFBF;
+    border-radius: 100px;
+  }
+  .news-lists.is-scroll::-webkit-scrollbar-thumb {
+    background: #7B7B7B;
+    border-radius: 100px;
+  }
+}
 
 .news-list__item {
   position: relative;
