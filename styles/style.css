@@ -5260,7 +5260,9 @@ textarea {
 @media all and (min-width: 1281px) {
   .news-lists.is-scroll {
     overflow-x: hidden;
+    width: 40.7142857143%;
     height: 445px;
+    padding-left: 10px;
   }
   .news-lists.is-scroll::-webkit-scrollbar {
     width: 5px;
@@ -6112,6 +6114,13 @@ textarea {
   }
 }
 
+@media all and (min-width: 1281px) {
+  .news-list__item[data-aos=fade-up]:nth-child(3) ~ li {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
 @media all and (max-width: 1280px) {
   .news-main[data-aos=fade-right] {
     -webkit-transform: translate3d(0, 100px, 0);
