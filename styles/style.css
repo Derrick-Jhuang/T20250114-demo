@@ -3448,6 +3448,7 @@ textarea {
 }
 .c-lbx-news .lbx-pic img {
   width: 100%;
+  line-height: 2.3333333333;
 }
 .c-lbx-news .lbx-pic + .lbx-headline {
   max-width: calc(100% - 40% - 25px);
@@ -3490,8 +3491,9 @@ textarea {
   line-height: 1.8;
   color: #e87f00;
 }
-.c-lbx-news .lbx-headline .l-edit {
-  display: inline-block;
+.c-lbx-news .l-edit {
+  font-size: 15px;
+  line-height: 2.3333333333;
 }
 @media all and (max-width: 1366px) {
   .c-lbx-news .lbx-content {
