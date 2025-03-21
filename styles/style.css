@@ -3338,14 +3338,13 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 20.5128205128%;
-  padding-right: 1.5625vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20.1282051282%;
 }
 .c-lbx-recruitment .lbx-row__item:nth-child(4) {
-  width: 29.4871794872%;
+  width: 31.5384615385%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3360,8 +3359,8 @@ textarea {
   text-align: center;
   color: #fff;
   background: #E87F00;
-  padding-top: 8px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 9px;
 }
 .c-lbx-recruitment .lbx-headline .lbx-row {
   color: #fff;
@@ -3371,9 +3370,6 @@ textarea {
   padding-top: 8px;
   padding-bottom: 10px;
   white-space: nowrap;
-}
-.c-lbx-recruitment .lbx-headline .lbx-row__item:nth-child(3) {
-  padding-right: calc(1.5625vw - 2px);
 }
 .c-lbx-recruitment .lbx-content {
   height: 100%;
