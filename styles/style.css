@@ -2133,6 +2133,9 @@ textarea {
   pointer-events: none !important;
   opacity: 0.3;
 }
+.c-btn-img-arrow-left:focus, .c-btn-img-arrow-right:focus {
+  background: #E87F00;
+}
 @media all and (min-width: 1367px) {
   .c-btn-img-arrow-left:hover, .c-btn-img-arrow-right:hover {
     background: #E87F00;
@@ -2171,6 +2174,9 @@ textarea {
 .c-btn-img-arrow-thin-left.swiper-button-disabled, .c-btn-img-arrow-thin-right.swiper-button-disabled {
   pointer-events: none !important;
   opacity: 0.3;
+}
+.c-btn-img-arrow-thin-left:focus, .c-btn-img-arrow-thin-right:focus {
+  background: #E87F00;
 }
 @media all and (min-width: 1367px) {
   .c-btn-img-arrow-thin-left:hover, .c-btn-img-arrow-thin-right:hover {
@@ -3343,6 +3349,8 @@ textarea {
   pointer-events: auto;
 }
 .c-lbx-sale .lbx-description {
+  font-size: 15px;
+  line-height: 2.4;
   max-height: calc(100% - 68px - 20px - 25.5208333333vw - 2.0833333333vw);
   padding-bottom: 5px;
 }
@@ -4030,9 +4038,9 @@ textarea {
 }
 @media all and (min-width: 1367px) {
   .fixed-side.is-move .c-btn-toolbar-label:hover, .fixed-side.is-end .c-btn-toolbar-label:hover {
-    -webkit-transform: translateX(-112px);
-        -ms-transform: translateX(-112px);
-            transform: translateX(-112px);
+    -webkit-transform: translateX(-108px);
+        -ms-transform: translateX(-108px);
+            transform: translateX(-108px);
   }
 }
 @media all and (max-width: 1366px) {
